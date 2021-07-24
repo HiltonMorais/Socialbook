@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SicialBook</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="http://kit.fontawesome.com/c4254e24a8.js" crossrigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><img src="images/notification.png"></li>
+                <li><img src="images/inbox.png"></li>
+                <li><img src="images/video.png"></li>
+            </ul>
+        </div>
+        <div class="nav-right"></div>
+            <div class="server-box">
+                <img src="images/search.png"> 
+                <input type="text" placeholder="Pesquisar">
+            </div>
+            <div class="nav-user-icon online" onclick="settingsMenuToggle()">
+                <img src="images/profile-pic.png">
+            </div>
+        </div>
+    <!--------- settings-menu -------------->    
+        <div class="settings-menu">
+            <div id="dark-btn">
+                <span></span>
+            </div>
+            <div class="settings-menu-inner">
+                <div class="user-profile">
+                    <img src="images/profile-pic.png">
+                    <div>
+                        <p>Mário Souza</p>
+                        <a href="#">Veja o seu perfil</a>
+                    </div>    
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="images/feedback.png">
+                    <div>
+                        <p>Comentários</p>
+                        <a href="#">Ajude-nos a melhorar o novo design</a>
+                    </div>    
+                </div>
+                <hr>
+                <div class="setting-links">
+                    <img src="images/setting.png" class="settings-icon">
+                    <a href="#">Configuração e Privacidade <img src="images/arrow.png"
+                    width="10px"></a>
+                </div>
+                <div class="setting-links">
+                    <img src="images/help.png" class="settings-icon">
+                    <a href="#">Ajuda e Suporte <img src="images/arrow.png"
+                    width="10px"></a>
+                </div>
+                <div class="setting-links">
+                    <img src="images/display.png" class="settings-icon">
+                    <a href="#">Exibir e Acessibilidade <img src="images/arrow.png"
+                    width="10px"></a>
+                </div>
+                <div class="setting-links">
+                    <img src="images/logout.png" class="settings-icon">
+                    <a href="#">Sair <img src="images/arrow.png"
+                    width="10px"></a>
+                </div>
+            </div>      
+        </div>
+    </nav>
+    <div class="container">
+    <!--------- left-sidebar -------------->
+    <div class="left-sidebar">
+        <div class="imp-links">
+            <a href="#"><img src="images/news.png"> Notícias</a>
+            <a href="#"><img src="images/friends.png"> Amigos</a>
+            <a href="#"><img src="images/group.png"> Grupos</a>
+            <a href="#"><img src="images/marketplace.png"> Loja</a>
+            <a href="#"><img src="images/watch.png"> Vídeos</a>
+            <a href="#">Ver mais</a>
+        </div>
+        <div class="shortcut-links">
+            <p>Atalhos</p>
+            <a href="#"><img src="images/shortcut-1.png"> Desenvolvedor Web</a>
+            <a href="#"><img src="images/shortcut-2.png"> Curso Web Design</a>
+            <a href="#"><img src="images/shortcut-3.png"> Full Stack</a>
+            <a href="#"><img src="images/shortcut-4.png"> Especialistas Website</a>
+        </div>
+    </div>
+        <!--------- main content -------------->
+        <div class="main-content">
+            <div class="story-gallery">
+                <div class="story story1">
+                    <img src="images/upload.png">
+                    <p>Criar story</p>
+                </div>
+                <div class="story story2">
+                    <img src="images/member-1.png">
+                    <p>Alice</p>
+                </div>
+                <div class="story story3">
+                    <img src="images/member-2.png">
+                    <p>Jonathan</p>
+                </div>
+                <div class="story story4">
+                    <img src="images/member-3.png">
+                    <p>Soraya</p>
+                </div>
+                <div class="story story5">
+                    <img src="images/member-4.png">
+                    <p>Caio Dias</p>
+                </div>
+            </div>
+            <div class="write-post-container">
+                <div class="user-profile">
+                    <img src="images/profile-pic.png">
+                    <div>
+                        <p>Mário Souza</p>
+                        <small>Publicação <i class="fas fa-caret-down"></i></small>
+                    </div>    
+                </div>
+                <div class="post-input-container">
+                    <textarea rows="3" placeholder="No que você está pensando?"></textarea>
+                    <div class="add-post-links">
+                        <a href="#"><img src="images/live-video.png"> Ao vivo</a>
+                        <a href="#"><img src="images/photo.png"> Foto/Video</a>
+                        <a href="#"><img src="images/feeling.png"> Atividade</a>
+                    </div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png">
+                        <div>
+                            <p>Mário Souza</p>
+                            <span>24 Junho 2021, 13:40 pm</span>
+                        </div>    
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text">Curtindo e compartilhando um vídeo com amigos,
+                    <span>@Engraçados</span> YouTube Channel.<a href="#">#Videos</a>
+                    <a href="#">#YouTubeChannel</a></p>
+                <img src="images/feed-image-1.png" class="post-img">
+            </div>
+               <div class="post-row">
+                   <div class="activity-icons">
+                       <div><img src="images/like-blue.png"> 120</div>
+                       <div><img src="images/comments.png"> 45</div>
+                       <div><img src="images/share.png"> 20</div>
+                   </div>
+                   <div class="post-profile-icon">
+                       <img src="images/profile-pic.png"> <i class="fas fa-caret-down"></i>
+                   </div>
+               </div>
+               <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png">
+                        <div>
+                            <p>Mário Souza</p>
+                            <span>24 Junho 2021, 13:40 pm</span>
+                        </div>    
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text">Curtindo um fim de tarde com amigos,
+                <span>@Praia</span> Todos juntos.<a href="#">#Amigos</a>
+                <a href="#">#FimdeTarde</a></p>
+                <img src="images/feed-image-2.png" class="post-img">
+            </div>
+               <div class="post-row">
+                   <div class="activity-icons">
+                       <div><img src="images/like.png"> 120</div>
+                       <div><img src="images/comments.png"> 45</div>
+                       <div><img src="images/share.png"> 20</div>
+                   </div>
+                   <div class="post-profile-icon">
+                       <img src="images/profile-pic.png"> <i class="fas fa-caret-down"></i>
+                   </div>
+               </div>
+               <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png">
+                        <div>
+                            <p>Mário Souza</p>
+                            <span>24 Junho 2021, 13:40 pm</span>
+                        </div>    
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text">Hora do almoço com amigos,
+                    <span>@Horadecomer</span> O que escolher ?<a href="#">#Lazanha</a>
+                    <a href="#">#Strogonoff</a></p>
+                <img src="images/feed-image-3.png" class="post-img">
+            </div>
+               <div class="post-row">
+                   <div class="activity-icons">
+                       <div><img src="images/like.png"> 120</div>
+                       <div><img src="images/comments.png"> 45</div>
+                       <div><img src="images/share.png"> 20</div>
+                   </div>
+                   <div class="post-profile-icon">
+                       <img src="images/profile-pic.png"> <i class="fas fa-caret-down"></i>
+                   </div>
+               </div>
+
+               <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png">
+                        <div>
+                            <p>Mário Souza</p>
+                            <span>24 Junho 2021, 13:40 pm</span>
+                        </div>    
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text">Reunião com os novos socios,
+                    <span>@Horadetrabalhar</span> Vamos ganhar dinheiro.<a href="#">#NovosNegocios</a>
+                    <a href="#">#GrandesProjetos</a></p>
+                <img src="images/feed-image-4.png" class="post-img">
+            </div>
+               <div class="post-row">
+                   <div class="activity-icons">
+                       <div><img src="images/like.png"> 120</div>
+                       <div><img src="images/comments.png"> 45</div>
+                       <div><img src="images/share.png"> 20</div>
+                   </div>
+                   <div class="post-profile-icon">
+                       <img src="images/profile-pic.png"> <i class="fas fa-caret-down"></i>
+                   </div>
+               </div>
+
+               <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png">
+                        <div>
+                            <p>Mário Souza</p>
+                            <span>24 Junho 2021, 13:40 pm</span>
+                        </div>    
+                    </div>
+                    <a href="#"><i class="fas fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text">Esposa trabalhando em casa,
+                    <span>@Horadetrabalhar</span> Vamos ganhar dinheiro.<a href="#">#HomeOffice</a>
+                    <a href="#">#SóEscrever</a></p>
+                <img src="images/feed-image-5.png" class="post-img">
+            </div>
+               <div class="post-row">
+                   <div class="activity-icons">
+                       <div><img src="images/like.png"> 120</div>
+                       <div><img src="images/comments.png"> 45</div>
+                       <div><img src="images/share.png"> 20</div>
+                   </div>
+                   <div class="post-profile-icon">
+                       <img src="images/profile-pic.png"> <i class="fas fa-caret-down"></i>
+                   </div>
+               </div>
+        <button type="button" class="load-more-btn"> Carregue mais</button>
+        </div>
+        <!--------- right-sidebar -------------->
+        <div class="right-sidebar">
+            <div class="sidebar-title">
+                <h4>Eventos</h4>
+                <a href="#">Ver tudo</a>
+            </div>
+            <div class="event">
+                <div class="left-event">
+                    <h3>18</h3>
+                    <span>Março</span>
+                </div>
+                <div class="right-event">
+                    <h4>Mídia social</h4>
+                    <p><i class="fas fa-map-marker-alt"></i>
+                        Expo Center Norte</p>
+                    <a href="#">Mais informações</a>
+                </div>
+            </div>
+            <div class="event">
+                <div class="left-event">
+                    <h3>22</h3>
+                    <span>Junho</span>
+                </div>
+                <div class="right-event">
+                    <h4>Marketing para celular</h4>
+                    <p><i class="fas fa-map-marker-alt"></i>
+                        Expo Center Norte</p>
+                    <a href="#">Mais informações</a>
+                </div>
+            </div>
+            <div class="sidebar-title">
+                <h4>Propaganda</h4>
+                <a href="#">Perto</a>
+            </div>
+            <img src="images/advertisement.png" class="sidebar-ads">
+            <div class="sidebar-title">
+                <h4>Conversas</h4>
+                <a href="#">Ocultar bate-papo</a>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-1.png">
+                </div>
+                <p>Alice Maia</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-2.png">
+                </div>
+                <p>Jonathan Silva</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-3.png">
+                </div>
+                <p>Soraya Ramos</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Copyright 2021 - Hilton Morais</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
